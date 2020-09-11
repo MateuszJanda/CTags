@@ -19,13 +19,22 @@ else:
 # Contants
 #
 
+# TAGS_RE = re.compile(
+#     r'(?P<symbol>[^\t]+)\t'
+#     r'(?P<filename>[^\t]+)\t'
+#     r'(?P<ex_command>(/.+/|\?.+\?|\d+));"\t'
+#     r'(?P<type>[^\t\r\n]+)'
+#     r'(?:\t(?P<fields>.*))?'
+# )
+
 TAGS_RE = re.compile(
     r'(?P<symbol>[^\t]+)\t'
     r'(?P<filename>[^\t]+)\t'
-    r'(?P<ex_command>(/.+/|\?.+\?|\d+));"\t'
-    r'(?P<type>[^\t\r\n]+)'
+    r'(?P<ex_command>[^\t]+)\t;"\t'
+    r'(?P<type>[^\t]+)'
     r'(?:\t(?P<fields>.*))?'
 )
+
 
 # column indexes
 SYMBOL = 0
