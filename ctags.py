@@ -30,7 +30,7 @@ else:
 TAGS_RE = re.compile(
     r'(?P<symbol>[^\t]+)\t'
     r'(?P<filename>[^\t]+)\t'
-    r'(?P<ex_command>[^\t]+)\t;"\t'
+    r'(?P<ex_command>[^\t]+);"\t'
     r'(?P<type>[^\t]+)'
     r'(?:\t(?P<fields>.*))?'
 )
